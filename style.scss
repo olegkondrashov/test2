@@ -1,0 +1,114 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    padding: 22px 0 22px 22px;
+}
+.logo {
+    height: 57px;
+}
+.img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.title {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 117.9%;
+    color: #333333;
+    margin: 0;
+    &-fz44 {
+        font-size: 44px;
+        margin: 114px 0 79px 0;
+    }
+}
+.blocks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 20px 20px;
+    background: #FFFFFF;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        max-height: 446px;
+        width: 100%;
+        max-width: 930px;
+        margin: 15px 10px;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+        &_descr {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            width: 50%;
+            padding: 47px 0 24px 57px;
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 226px;
+                border-top: 1px solid #E0E0E0;
+                border-bottom: 1px solid #E0E0E0;
+                &-arc {
+                    border-bottom: none;
+                }
+            }
+            &-link {
+                display: inline-block;
+                position: relative;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 117.9%;
+                width: 100%;
+                height: 100%;
+                max-height: 34px;
+                color: #31B447;
+                text-decoration: none;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 3px;
+                    bottom: -3px;
+                    left: 0;
+                    background-color: #31B447;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+                &:hover, :focus {
+                    color: #31B447;
+                    &::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+            }
+            &-icons {
+                height: 100%;
+                max-height: 50px;
+                width: 100%;
+                img {
+                    width: 45%;
+                    object-fit: contain;
+                }
+            }
+        }
+        &_photo {
+            width: 50%;
+        }
+    }
+}
+
+@import 'media'
