@@ -40,15 +40,18 @@
     .row {
         flex-direction: column;
     }
-    .blocks__item_descr-icons {
-        margin-top: 15px;
+    .blocks__item {
+        margin: 15px auto;
+        &_descr-icons {
+            margin-top: 15px;
+        }
     }
+    
 }
 @media (max-width: 425px) {
     .blocks__item {
         flex-direction: column;
         max-height: 100%;
-        margin: 15px 0;
         &_descr {
             width: 100%;
             align-items: center;
