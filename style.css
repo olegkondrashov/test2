@@ -34,7 +34,7 @@
   .title-fz44 { font-size: 30px; }
   .blocks__item_descr-link { font-size: 13px; } }
 @media (max-width: 768px) { .row { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
-@media (max-width: 425px) { .blocks__item { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; max-height: 100%; margin: 0; }
+@media (max-width: 425px) { .blocks__item { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; max-height: 100%; margin: 15px 0; }
   .blocks__item_descr { width: 100%; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 30px 0 24px 0; }
   .blocks__item_descr-icons { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
   .blocks__item_descr-icons img { padding: 5px; width: 100%; }
